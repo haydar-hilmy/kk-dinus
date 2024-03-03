@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://kit.fontawesome.com/a502a8bc22.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/a502a8bc22.js" crossorigin="anonymous"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/main.css">
 
     <title>CMD-QE Laboratory – Computational Materials Design and Quantum Engineering</title>
+
 </head>
 
 <body>
@@ -20,11 +21,93 @@
     <div class="page">
 
         <header>
-            <div class="header">
-                <div class="header-left-section"></div>
-                <div class="header-right-section"></div>
+            <div class="header-text">
+
+                <div class="header-left-section">
+                    <a href="#"><img src="asset/image/header.png" alt="header"></a>
+                </div>
+
+                <div class="header-right-section">
+                    <div class="col-wrap">
+                        <a href="#"><img src="asset/icon/social-media/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="asset/icon/social-media/twitter.png" alt="twitter"></a>
+                        <a href="#"><img src="asset/icon/social-media/instagram.png" alt="instagram"></a>
+                    </div>
+
+                    <form method="post">
+                        <?= csrf_field() ?>
+                        <input type="text" placeholder="Search" name="search">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+
             </div>
-            <div class="slider"></div>
+
+            <nav>
+                <div class="menu-primary">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">News</a>
+                        </li>
+                        <li>
+                            <a href="#">Members</a>
+                            <ul>
+                                <li>Loremmember</li>
+                                <li>Loremmember</li>
+                                <li>Loremmember</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Research</a>
+                            <ul>
+                                <li>loremresearch</li>
+                                <li>loremresearch</li>
+                                <li>loremresearch</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Project</a>
+                            <ul>
+                                <li>loremproject</li>
+                                <li>loremproject</li>
+                                <li>loremproject</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Publications</a>
+                        </li>
+                        <li>
+                            <a href="#">Lecture & Tutorials</a>
+                        </li>
+                        <li>
+                            <a href="#">In-House Code</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="banner">
+                <div class="slider">
+
+                    <div class="slider-banner">
+                        <img src="asset/banner/banner1.png" alt="banner">
+                        <div class="caption-slider-banner">
+                            <a href="#">Lorem ipsum dolor sit amet consectetur</a>
+                        </div>
+                    </div>
+                    <div class="slider-banner">
+                        <img src="asset/banner/banner1.png" alt="banner">
+                        <div class="caption-slider-banner">
+                            <a href="#">Lorem ipsum dolor sit amet consectetur</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </header>
 
         <div class="main">
