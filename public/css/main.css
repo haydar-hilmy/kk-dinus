@@ -10,6 +10,9 @@ body{
 .page{
     position: relative;
     width: auto;
+    background-color: #fff;
+    margin: 30px 30px;
+    box-shadow: 0 2px 6px rgba( 0, 0, 0, 0.3);
 }
 
 header{
@@ -19,14 +22,17 @@ header{
 
 .header-text{
     display: inline-block;
+    width: 100%;
 }
 
 .header-left-section{
     float: left;
+    margin: 30px;
 }
 
 .header-right-section{
     float: right;
+    margin: 30px;
 }
 
 .header-right-section .col-wrap{
@@ -37,5 +43,29 @@ header{
     gap: 8px;
 }
 .col-wrap a img {
-    width: 20px;
+    width: 30px;
+} 
+.header-right-section form{
+    display: flex;
+    margin: 8px 0 0 0;
 }
+.header-right-section form button{
+    padding: 10px;
+    width: auto;
+    aspect-ratio: 1/1;
+    font-size: 0.95rem;
+    border: 1px solid rgb(200, 200, 200);
+    cursor: pointer;
+    color: #fff;
+    background-color: #1e73be;
+    border-radius: 0 3px 3px 0;
+}
+.header-right-section form input[type="text"]{
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    border-radius: 3px 0 0 3px;
+    width: 135px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+/* lanjut bagian navbar */
