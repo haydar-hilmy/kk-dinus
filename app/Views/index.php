@@ -189,7 +189,7 @@
                 </div>
             </div>
             <div class="footer-widget-socket">
-                <p>Copyright © 2024 CMD-QE Laboratory. Powered by WordPress. Theme: Spacious by ThemeGrill</p>
+                <p>Copyright © 2024 Programmer udinus</p>
             </div>
         </footer>
 
