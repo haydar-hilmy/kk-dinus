@@ -68,4 +68,33 @@ header{
     border: 1px solid rgb(200, 200, 200);
 }
 
-/* lanjut bagian navbar */
+nav{
+    display: block;
+}
+.menu-primary ul{
+    list-style-type: none;
+    display: flex;
+    gap: 14px;
+}
+.menu-primary ul li a, svg.dropdown-icon {
+    color: #000;
+    text-decoration: none;
+    fill: #000;
+}
+.menu-primary ul li a {
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+}
+.menu-primary ul li .dropdown-menu{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: center;
+    box-shadow: 0 2px 12px rgba( 0, 0, 0, 0.3);
+    padding: 12px;
+}
+.menu-primary ul li:hover .dropdown-menu {
+    display: flex;
+}
