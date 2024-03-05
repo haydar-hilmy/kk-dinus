@@ -60,9 +60,9 @@
                                 </svg>
                             </a>
                             <ul class="dropdown-menu">
-                                <a>Loremmember</a>
-                                <a>Loremmember</a>
-                                <a>Loremmember</a>
+                                <a>member</a>
+                                <a>member</a>
+                                <a>member</a>
                             </ul>
                         </li>
                         <li>
@@ -73,9 +73,9 @@
                                 </svg>
                             </a>
                             <ul class="dropdown-menu">
-                                <a>loremresearch</a>
-                                <a>loremresearch</a>
-                                <a>loremresearch</a>
+                                <a>research</a>
+                                <a>research</a>
+                                <a>research</a>
                             </ul>
                         </li>
                         <li>
@@ -86,9 +86,9 @@
                                 </svg>
                             </a>
                             <ul class="dropdown-menu">
-                                <a>loremproject</a>
-                                <a>loremproject</a>
-                                <a>loremproject</a>
+                                <a>project</a>
+                                <a>project</a>
+                                <a>project</a>
                             </ul>
                         </li>
                         <li>
@@ -124,6 +124,12 @@
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod non exercitationem esse sed saepe
                         </a>
                     </div>
+                    <div class="item">
+                        <img src="asset/banner/banner2.png" alt="banner">
+                        <a class="caption">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod non exercitationem esse sed saepe
+                        </a>
+                    </div>
                 </div>
                 <button class="btn prev">
                     <svg height="35px" version="1.1" viewBox="0 0 512 512" width="35px" xmlns="http://www.w3.org/2000/svg">
@@ -146,13 +152,22 @@
         <div class="main">
             <article>
                 <div class="primary">
-                    <!-- <h2>Welcome to Computational Materials Design and Quantum Engineering (CMD-QE) Lab at ITB!</h2> -->
-                    <!-- <p>Our research group utilizes and develops atomistic-based multi-scale materials simulation techniques (e.g. first-principles density functional theory calculations, ab-initio and classical molecular dynamics and kinetic Monte Carlo (kMC)) to study various physical and chemical properties of materials. We have broad interest in various topics related (but not limited) to: solid-state catalysts for various chemical reactions (e.g. direct methane-to-methanol conversion, oxygen reduction reaction (ORR), etc.); electronic and ionic conductivities in solid state materials and polymers; materials for hydrogen and direct-hydrazine fuel cells; materials for drug delivery; materials for gas sensors; and materials for energy conversion and storage (e.g. photovoltaic, Li/Na-ion batteries, Metal-air batteries, etc.). Our recent effort also include machine-learning and data-driven-based approach to accelerate the discovery of new functional materials. Beyond materials-related research, our group also interested in the theoretical study related to quantum technologies (e.g. quantum computing, quantum thermodynamics and quantum measurement).</p> -->
+                    <h2>Welcome to Computational Materials Design and Quantum Engineering (CMD-QE) Lab at ITB!</h2>
+                    <p>Our research group utilizes and develops atomistic-based multi-scale materials simulation techniques (e.g. first-principles density functional theory calculations, ab-initio and classical molecular dynamics and kinetic Monte Carlo (kMC)) to study various physical and chemical properties of materials. We have broad interest in various topics related (but not limited) to: solid-state catalysts for various chemical reactions (e.g. direct methane-to-methanol conversion, oxygen reduction reaction (ORR), etc.); electronic and ionic conductivities in solid state materials and polymers; materials for hydrogen and direct-hydrazine fuel cells; materials for drug delivery; materials for gas sensors; and materials for energy conversion and storage (e.g. photovoltaic, Li/Na-ion batteries, Metal-air batteries, etc.). Our recent effort also include machine-learning and data-driven-based approach to accelerate the discovery of new functional materials. Beyond materials-related research, our group also interested in the theoretical study related to quantum technologies (e.g. quantum computing, quantum thermodynamics and quantum measurement).</p>
                 </div>
 
                 <div class="secondary">
-                    <div class="widget"></div>
-                    <aside></aside>
+                    <div class="widget">
+                        <aside>
+                            <h3>Recent Post</h3>
+                            <ul>
+                                <li><a href="#">Webinar Series</a></li>
+                                <li><a href="#">Webinar Series</a></li>
+                                <li><a href="#">Webinar Series</a></li>
+                                <li><a href="#">Webinar Series</a></li>
+                            </ul>
+                        </aside>
+                    </div>
                 </div>
 
             </article>
@@ -160,12 +175,21 @@
 
         <footer>
             <div class="footer-widget">
-                <div class="column-widget"></div>
-                <div class="column-widget"></div>
-                <div class="column-widget"></div>
+                <div class="column-widget">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos minima doloremque, suscipit, ipsam quia esse nostrum neque laboriosam</p>
+                </div>
+                <div class="column-widget">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos minima doloremque, suscipit, ipsam quia esse nostrum neque laboriosam</p>
+                </div>
+                <div class="column-widget">
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos minima doloremque, suscipit, ipsam quia esse nostrum neque laboriosam</p>
+                </div>
             </div>
             <div class="footer-widget-socket">
-                <!-- <p>Copyright © 2024 CMD-QE Laboratory. Powered by WordPress. Theme: Spacious by ThemeGrill</p> -->
+                <p>Copyright © 2024 CMD-QE Laboratory. Powered by WordPress. Theme: Spacious by ThemeGrill</p>
             </div>
         </footer>
 
