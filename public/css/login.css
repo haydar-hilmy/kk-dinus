@@ -1,0 +1,45 @@
+:root {
+    --border-form-color: #6d6d6d;
+}
+
+.form-login{
+    width: 100%;
+}
+.form-login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    border-bottom: 2px solid var(--border-form-color);
+    border-top: 2px solid var(--border-form-color);
+}
+
+.form-login form div{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 8px 0;
+}
+
+.form-login form div input{
+    padding: 8px 12px;
+    margin: 4px 0 0 0;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 2px solid #b6b6b6;
+}
+.form-login form div input:focus{
+    outline: 2px solid #b1b1b1;
+}
+.form-login form div button{
+    padding: 8px 14px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #008DDA;
+    color: #fff;
+    border: transparent;
+    border-radius: 6px;
+}

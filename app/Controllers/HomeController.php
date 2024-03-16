@@ -6,6 +6,10 @@ class HomeController extends BaseController
 {
     public function index(): string
     {
-        return view('index');
+        $data = [
+            "title" => "CMD-QE Laboratory – Computational Materials Design and Quantum Engineering"
+        ];
+
+        return view('index', $data);
     }
 }
