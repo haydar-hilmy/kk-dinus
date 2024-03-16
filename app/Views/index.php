@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carousel-banner.css">
 
     <title>CMD-QE Laboratory – Computational Materials Design and Quantum Engineering</title>
 
@@ -24,7 +25,7 @@
             <div class="header-text">
 
                 <div class="header-left-section">
-                    <a href="#"><img src="asset/image/header.png" alt="header"></a>
+                    <a href="#"><img src="asset/logo/matics-logo.png" alt="header"></a>
                 </div>
 
                 <div class="header-right-section">
@@ -45,6 +46,7 @@
 
             <nav>
                 <div class="menu-primary">
+                    <button class="menu-primary-btn">MENU</button>
                     <ul>
                         <li>
                             <a href="#">Home</a>
@@ -99,6 +101,9 @@
                         </li>
                         <li>
                             <a href="#">In-House Code</a>
+                        </li>
+                        <li>
+                            <a href="/login">Login</a>
                         </li>
                     </ul>
                 </div>
