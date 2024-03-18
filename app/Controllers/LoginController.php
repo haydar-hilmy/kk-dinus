@@ -5,8 +5,16 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 
+use App\Models\KKModel;
+
 class LoginController extends BaseController
 {
+    protected $kkModel;
+
+    public function __construct(){
+        $this->kkModel = new KKModel();
+    }
+
     public function index()
     {
         $data = [
@@ -15,12 +23,15 @@ class LoginController extends BaseController
         return view("login", $data);
     }
 
-    public function login(){
+    public function auth(){
         $nip = htmlspecialchars($this->request->getVar('nip'), ENT_QUOTES, 'UTF-8');
         $password = htmlspecialchars($this->request->getVar('password'), ENT_QUOTES, 'UTF-8');
 
+        $query = $this->kkModel->auth($nip, $password);
+
+        if(!$query){
+            return redirect()->to('/login')->withInput()->with("error", "NIP atau Password salah!");
+        }
 
     }
 }
-
-// MEMBUAT MODEL LOGIN dan LOGIC nya

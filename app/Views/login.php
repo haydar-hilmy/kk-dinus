@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 
 <div class="form-login">
-    <form action="login" method="post">
+    <form action="login/auth" method="post">
         <?= csrf_field() ?>
         <div>
             <label for="nip">NIP</label>
@@ -13,6 +13,9 @@
             <label for="password">Password</label>
             <input type="password" placeholder="Password" name="password" id="password" required>
         </div>
+        <?php if (session()->getFlashdata('error')) : ?>
+            <p><?= session()->getFlashdata('error') ?></p>
+        <?php endif; ?>
         <div>
             <button>Login</button>
         </div>
