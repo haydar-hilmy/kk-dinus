@@ -14,7 +14,7 @@
             <input type="password" placeholder="Password" name="password" id="password" required>
         </div>
         <?php if (session()->getFlashdata('error')) : ?>
-            <p><?= session()->getFlashdata('error') ?></p>
+            <p class="warning-info"><?= session()->getFlashdata('error') ?></p>
         <?php endif; ?>
         <div>
             <button>Login</button>

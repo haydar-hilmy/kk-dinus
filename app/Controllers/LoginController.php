@@ -33,5 +33,6 @@ class LoginController extends BaseController
             return redirect()->to('/login')->withInput()->with("error", "NIP atau Password salah!");
         }
 
+        return redirect()->to("/");
     }
 }

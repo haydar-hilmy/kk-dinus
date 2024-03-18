@@ -18,6 +18,15 @@ body {
 }
 
 
+/* GLOBAL */
+.warning-info{
+    font-size: 0.9rem;
+    color: rgb(255, 24, 24); /* red */
+}
+
+
+
+
 /* ===== HEADER ===== */
 header {
     position: relative;
