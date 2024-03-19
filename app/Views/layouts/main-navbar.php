@@ -79,7 +79,7 @@
                     <a href="#">In-House Code</a>
                 </li>
                 <li>
-                    <?php if (session('login')) { ?>
+                    <?php if (session('superadmin') || session('ketua_kk')) { ?>
                         <a href="/logout">Logout</a>
                     <?php } else { ?>
                         <a href="/login">Login</a>
