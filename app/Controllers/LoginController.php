@@ -18,7 +18,7 @@ class LoginController extends BaseController
     public function index()
     {
         $data = [
-            "title" => "Login User"
+            "title" => "Login Admin"
         ];
         return view("login", $data);
     }
@@ -34,5 +34,11 @@ class LoginController extends BaseController
         }
 
         return redirect()->to("/");
+    }
+
+    public function logout(){
+        session()->destroy();
+
+        return redirect()->to('/');
     }
 }

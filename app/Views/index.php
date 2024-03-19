@@ -4,6 +4,8 @@
 
 <?= $this->include('layouts/index/banner') ?>
 
+<?php if(session('superadmin')){echo $this->include('admin-layouts/main-admin');} ?>
+
 <article>
     <div class="primary">
         <h2>Welcome to Computational Materials Design and Quantum Engineering (CMD-QE) Lab at ITB!</h2>

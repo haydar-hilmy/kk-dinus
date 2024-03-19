@@ -79,7 +79,11 @@
                     <a href="#">In-House Code</a>
                 </li>
                 <li>
-                    <a href="/login">Login</a>
+                    <?php if (session('login')) { ?>
+                        <a href="/logout">Logout</a>
+                    <?php } else { ?>
+                        <a href="/login">Login</a>
+                    <?php } ?>
                 </li>
             </ul>
         </div>
