@@ -23,18 +23,17 @@ class KKModel extends Model
             return false;
         }
 
-        $query = $this->where('nip', $username)->first();
-
+        $query = $this->db->query("SELECT * FROM kk WHERE BINARY nip = ?", [$username])->getRow();
         if (!$query) {
             return false;
         }
 
-        if (!password_verify($password, $query["password"])) {
+        if (!password_verify($password, $query->password)) {
             return false;
         }
 
         // filter role antara superadmin dengan ketua_kk
-        if ($query["role"] == "superadmin") {
+        if ($query->role == "superadmin") {
             session()->set('superadmin', $username);
         } else {
             session()->set('ketua_kk', $username);
