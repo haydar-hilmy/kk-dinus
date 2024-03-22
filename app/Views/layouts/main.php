@@ -27,12 +27,16 @@
         </header>
 
         <div class="main">
-            
+
             <?= $this->renderSection('content') ?>
 
         </div>
 
-            <?= $this->include('layouts/main-footer') ?>
+        <?php if (session('superadmin') == null) {
+            echo $this->include('layouts/main-footer');
+        } else {
+            echo $this->include('admin-layouts/footer-admin');
+        }?>
 
     </div>
 
