@@ -2,12 +2,6 @@
 
 <?= $this->section('content') ?>
 
-<?php if(session('superadmin')){ ?> 
-    
-<?= $this->include('admin-layouts/main-admin') ?>
-
-<?php } else { ?>
-
 <?= $this->include('layouts/index/banner') ?>
 
 <article>
@@ -33,8 +27,5 @@
 </article>
 
 <script src="js/carousel.js"></script>
-
-<?php } ?>
-
 
 <?= $this->endSection() ?>

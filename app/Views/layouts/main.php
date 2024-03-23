@@ -32,11 +32,7 @@
 
         </div>
 
-        <?php if (session('superadmin') == null) {
-            echo $this->include('layouts/main-footer');
-        } else {
-            echo $this->include('admin-layouts/footer-admin');
-        }?>
+        <?= $this->include('layouts/main-footer') ?>
 
     </div>
 

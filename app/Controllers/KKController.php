@@ -9,6 +9,10 @@ class KKController extends BaseController
 {
     public function index()
     {
-        
+        $data = [
+            "title" => "Super Admin"
+        ];
+
+        return view('admin-layouts/index-admin', $data);
     }
 }

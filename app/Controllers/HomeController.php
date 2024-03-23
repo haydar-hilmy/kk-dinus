@@ -4,17 +4,17 @@ namespace App\Controllers;
 
 class HomeController extends BaseController
 {
-    public function index(): string
+    public function index()
     {
         if(session('superadmin')){
-            $data = ["title" => "Super Admin"];
+            return redirect()->to(site_url('/superadmin'));
         } else if(session('ketua_kk')){
-            $data = ["title" => "Ketua KK"];
+            return redirect()->to(site_url('/superadmin'));
         } else {
             $data = [
                 "title" => "CMD-QE Laboratory – Computational Materials Design and Quantum Engineering"
             ];
+            return view('index', $data);
         }
-        return view('index', $data);
     }
 }
