@@ -13,6 +13,12 @@ class KKController extends BaseController
             "title" => "Super Admin"
         ];
 
-        return view('admin-layouts/index-admin', $data);
+        return view('admin/index-admin', $data);
+    }
+
+    public function banner(){
+        $data = ["title" => "Banner"];
+
+        return view('admin/layouts/banner', $data);
     }
 }

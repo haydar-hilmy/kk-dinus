@@ -10,7 +10,7 @@
     <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="<?= base_url('css/main.css') ?>">
 
     <title><?= $title ?></title>
 
@@ -21,7 +21,7 @@
     <div class="page">
 
         <header>
-            <?= $this->include('admin-layouts/navbar-admin') ?>
+            <?= $this->include('admin/navbar-admin') ?>
         </header>
 
         <div class="main">
@@ -30,7 +30,7 @@
 
         </div>
 
-        <?= $this->include('admin-layouts/footer-admin') ?>
+        <?= $this->include('admin/footer-admin') ?>
 
     </div>
 
