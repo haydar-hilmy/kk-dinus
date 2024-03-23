@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use PDO;
 
 class KKModel extends Model
 {
@@ -15,6 +16,14 @@ class KKModel extends Model
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
 
+    public function getKK($id = false){
+        if(!$id){
+            $query = $this->db->query("SELECT * FROM kk WHERE role = 'kk'");
+            $query = $query->getResult();
+            return $query;
+        }
+        return $this->where('id', $id)->first();
+    }
 
     public function auth($username = false, $password = false)
     {

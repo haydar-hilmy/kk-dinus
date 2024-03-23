@@ -1,29 +1,13 @@
 <main class="carousel-container">
     <div class="carousel">
-        <div class="item active">
-            <img src="asset/banner/banner1.png" alt="banner">
+        <?php $i = 0; foreach($banners as $key => $banner): $i++; ?>
+        <div class="item <?php $i == 1? "active": "" ?>">
+            <img src="<?= base_url('asset/banner/') . $banner->image ?>" alt="<?= $banner->title ?>" title="<?= $banner->title ?>">
             <a class="caption">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod non exercitationem esse sed saepe
+                <?= $banner->description ?>
             </a>
         </div>
-        <div class="item">
-            <img src="asset/banner/banner2.png" alt="banner">
-            <a class="caption">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod non exercitationem esse sed saepe
-            </a>
-        </div>
-        <div class="item">
-            <img src="asset/banner/banner1.png" alt="banner">
-            <a class="caption">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod non exercitationem esse sed saepe
-            </a>
-        </div>
-        <div class="item">
-            <img src="asset/banner/banner2.png" alt="banner">
-            <a class="caption">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod non exercitationem esse sed saepe
-            </a>
-        </div>
+        <?php endforeach ?>
     </div>
     <button class="btn prev">
         <svg height="35px" version="1.1" viewBox="0 0 512 512" width="35px" xmlns="http://www.w3.org/2000/svg">
