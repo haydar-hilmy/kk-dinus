@@ -19,7 +19,8 @@ class KKController extends BaseController
     public function index()
     {
         $data = [
-            "title" => "Super Admin"
+            "title" => "Super Admin",
+            "kelompokKajian" => $this->kkmodel->getKK()
         ];
 
         return view('admin/index-admin', $data);

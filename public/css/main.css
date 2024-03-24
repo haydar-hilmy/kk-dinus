@@ -23,7 +23,10 @@ body {
     font-size: 0.9rem;
     color: rgb(255, 24, 24); /* red */
 }
-
+.title{
+    padding: 6px 24px;
+    display: inline-block;
+}
 
 
 

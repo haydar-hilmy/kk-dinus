@@ -16,7 +16,7 @@ class BannerModel extends Model
 
     public function getBanner($id = false){
         if(!$id){
-            $query = $this->db->query("SELECT * FROM banner ");
+            $query = $this->db->query("SELECT banner.*, kk.shortName FROM banner JOIN kk ON banner.id_kk = kk.id");
             return $query->getResult();
         }
         return $this->where('id', $id)->first();

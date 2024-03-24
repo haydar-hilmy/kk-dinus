@@ -13,6 +13,7 @@
                     </svg>
                 </a>
                 <ul class="dropdown-menu">
+                    <a href="#">Manage KK</a>
                     <?php foreach ($kelompokKajian as $key => $kk): ?>
                         <a href="#"><?= $kk->fullName ?></a>
                     <?php endforeach ?>
