@@ -35,4 +35,5 @@ class KKController extends BaseController
 
         return view('admin/layouts/banner', $data);
     }
+
 }

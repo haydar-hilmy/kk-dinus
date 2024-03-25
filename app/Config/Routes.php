@@ -15,3 +15,6 @@ $routes->get('/logout', 'LoginController::logout');
 // SUPERADMIN
 $routes->get('/superadmin', 'KKController');
 $routes->get('/superadmin/banner', 'KKController::banner');
+
+$routes->get('/superadmin/banner/add', 'AdminController::addBanner');
+$routes->get('/superadmin/banner/del/(:num)', 'AdminController::deleteBanner/$1');

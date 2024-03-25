@@ -28,7 +28,7 @@
                 <td><?= $b->description ?></td>
                 <td><?= $b->updated_at ?></td>
                 <td>
-                    <a href="#">Delete</a> | <a href="#">Edit</a>
+                    <a href="<?= base_url('superadmin/banner/del/') . $b->id ?>">Delete</a> | <a href="#">Edit</a>
                 </td>
             </tr>
         <?php endforeach ?>

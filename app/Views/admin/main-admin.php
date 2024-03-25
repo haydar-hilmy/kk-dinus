@@ -25,9 +25,7 @@
         </header>
 
         <div class="main">
-
             <?= $this->renderSection('content') ?>
-
         </div>
 
         <?= $this->include('admin/footer-admin') ?>
