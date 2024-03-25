@@ -102,7 +102,7 @@ nav {
 .menu-primary ul {
     list-style-type: none;
     display: flex;
-    gap: 26px;
+    gap: 12px;
     flex-wrap: wrap;
 }
 
