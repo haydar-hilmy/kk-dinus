@@ -2,10 +2,9 @@
 
 <?= $this->section('content') ?>
 
-<div>
+<div class="container">
     <h2>Add Banner</h2>
-
-    <form action="" method="post">
+    <form action="add" method="post">
         <div class="form-group mt-3">
             <label for="judul">Judul Banner</label>
             <input type="text" name="judul" class="form-control" id="judul" placeholder="Masukkan Judul">
@@ -15,10 +14,14 @@
             <label for="deskripsi">Deskripsi Banner</label>
             <textarea class="form-control" name="deskripsi" id="deskripsi" rows="3" placeholder="Masukkan Deskripsi"></textarea>
         </div>
+        
+        <div class="container w-50">
+            <img class="w-100 rounded" alt="preview" id="previewImg">
+        </div>
 
         <div class="custom-file mt-3">
-            <input type="file" class="custom-file-input" id="customFile">
-            <label class="custom-file-label" name="file" for="customFile">Choose file</label>
+            <input onchange="preview()" type="file" class="custom-file-input" id="img_input">
+            <label class="custom-file-label" id="label_foto" name="file" for="img_input">Choose file</label>
         </div>
 
         <div class="form-group mt-3">
@@ -26,5 +29,7 @@
         </div>
     </form>
 </div>
+
+<script src="<?= base_url('js/img-preview.js') ?>"></script>
 
 <?= $this->endsection() ?>

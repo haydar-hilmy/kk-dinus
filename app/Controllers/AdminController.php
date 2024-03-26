@@ -26,10 +26,20 @@ class AdminController extends BaseController
             "title" => "Add Banner",
             "kelompokKajian" => $this->kkModel->getKK()
         ];
-
+        
         return view('admin/layouts/add-banner', $data);
     }
 
+    public function postBanner(){
+        $data = [
+            "id_kk" => $this->request->getVar(""), // ID_KK
+            "title" => $this->request->getVar("judul"),
+            "image" => $this->request->getVar("file"),
+            "description" => $this->request->getVar("deskripsi")
+        ];
+        $this->bannerModel->send($data);
+    }
+    
     public function deleteBanner($id){
         $findBanner = $this->bannerModel->find($id);
         

@@ -17,4 +17,5 @@ $routes->get('/superadmin', 'KKController');
 $routes->get('/superadmin/banner', 'KKController::banner');
 
 $routes->get('/superadmin/banner/add', 'AdminController::addBanner');
+$routes->post('/superadmin/banner/add', 'AdminController::postBanner');
 $routes->get('/superadmin/banner/del/(:num)', 'AdminController::deleteBanner/$1');

@@ -16,8 +16,9 @@ class KKModel extends Model
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
 
-    public function getKK($id = false){
-        if(!$id){
+    public function getKK($id = false)
+    {
+        if (!$id) {
             $query = $this->db->query("SELECT * FROM kk WHERE role = 'kk'");
             $query = $query->getResult();
             return $query;
