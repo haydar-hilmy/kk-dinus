@@ -10,7 +10,7 @@
                 </a>
             </li>
             <li>
-                <div class="btn-group">
+                <div class="dropdown">
                     <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         KK Dinus
                     </button>
@@ -23,7 +23,7 @@
                 </div>
             </li>
             <li>
-                <div class="btn-group">
+                <div class="dropdown">
                     <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Layouts
                     </button>

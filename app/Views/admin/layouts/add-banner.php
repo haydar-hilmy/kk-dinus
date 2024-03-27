@@ -15,13 +15,13 @@
             <textarea class="form-control" name="deskripsi" id="deskripsi" rows="3" placeholder="Masukkan Deskripsi"></textarea>
         </div>
         
-        <div class="container w-50">
+        <div class="container w-50 mt-3">
             <img class="w-100 rounded" alt="preview" id="previewImg">
         </div>
 
-        <div class="custom-file mt-3">
-            <input onchange="preview()" type="file" class="custom-file-input" id="img_input">
-            <label class="custom-file-label" id="label_foto" name="file" for="img_input">Choose file</label>
+        <div class="mt-3">
+            <label class="form-label" id="label_foto" for="img_input">File Banner</label>
+            <input onchange="preview()" type="file" name="file" class="form-control" id="img_input">
         </div>
 
         <div class="form-group mt-3">

@@ -32,12 +32,14 @@ class AdminController extends BaseController
 
     public function postBanner(){
         $data = [
-            "id_kk" => $this->request->getVar(""), // ID_KK
+            "id_kk" => $this->kkModel->getIdBySess()->id,
             "title" => $this->request->getVar("judul"),
             "image" => $this->request->getVar("file"),
             "description" => $this->request->getVar("deskripsi")
         ];
-        $this->bannerModel->send($data);
+        $this->bannerModel->save($data);
+
+        return redirect()->to('superadmin/banner');
     }
     
     public function deleteBanner($id){

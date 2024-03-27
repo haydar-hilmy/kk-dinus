@@ -26,6 +26,20 @@ class KKModel extends Model
         return $this->where('id', $id)->first();
     }
 
+    public function getIdBySess(){
+        if(session()->get('superadmin') !== null){
+            $username = session()->get('superadmin');
+            $query = $this->db->query("SELECT id FROM kk WHERE BINARY nip = ?", [$username])->getRow();
+            return $query;
+        } else if(session()->get('ketua_kk') !== null){
+            $username = session()->get('ketua_kk');
+            $query = $this->db->query("SELECT id FROM kk WHERE BINARY nip = ?", [$username])->getRow();
+            return $query;
+        } else {
+            return false;
+        }
+    }
+
     public function auth($username = false, $password = false)
     {
 
