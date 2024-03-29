@@ -21,31 +21,31 @@ class AdminController extends BaseController
 
     // }
 
-    public function addBanner(){
+    public function addBanner()
+    {
         $data = [
             "title" => "Add Banner",
             "kelompokKajian" => $this->kkModel->getKK()
         ];
-        
+
         return view('admin/layouts/add-banner', $data);
     }
 
-    public function postBanner(){
+    public function postBanner()
+    {
 
         if (!$this->validate([
             'file' => [
-                'rules' => 'max_size[file,5120]|is_image[file]|mime_in[file,image/jpg,image/png,image/jpeg]',
+                'rules' => 'max_size[file,1024]|is_image[file]|mime_in[file,image/jpg,image/png,image/jpeg]',
                 'errors' => [
-                    'max_size' => 'Ukuran Foto Max 5MB',
+                    'max_size' => 'Ukuran Foto Max 1MB',
                     'mime_in' => 'Hanya File JPG/PNG Yang Diizinkan.',
                     'is_image' => 'File harus berupa gambar'
                 ]
             ]
-        ])){
+        ])) {
             $validation = \Config\Services::validation();
-            // return redirect()->back()->withInput()->with('validation', $validation);
-            // return redirect()->to("superadmin/banner/add")->withInput()->with('validation', $validation);
-            dd($validation);
+            return redirect()->to("superadmin/banner/add")->withInput()->with('file', $validation->getErrors());
         }
 
         $get_File = $this->request->getFile('file');
@@ -73,12 +73,17 @@ class AdminController extends BaseController
 
         return redirect()->to('superadmin/banner');
     }
-    
-    public function deleteBanner($id){
+
+    public function deleteBanner($id)
+    {
         $findBanner = $this->bannerModel->find($id);
-        
+
+        if ($findBanner["image"] !== "" || $findBanner["image"] !== null) {
+            unlink('asset/banner/' . $findBanner['image']);
+        }
+
         $this->bannerModel->delete($id);
-        
+
         return redirect()->to(site_url('superadmin/banner'));
     }
 }

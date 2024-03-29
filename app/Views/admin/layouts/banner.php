@@ -28,7 +28,12 @@
                 <td><?= $b->description ?></td>
                 <td><?= $b->updated_at ?></td>
                 <td>
-                    <a href="<?= base_url('superadmin/banner/del/') . $b->id ?>">Delete</a> | <a href="#">Edit</a>
+                    <form action="<?= base_url('superadmin/banner/del/') . $b->id ?>" method="post">
+                        <?= csrf_field(); ?>
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" onclick="return confirm('Yakin menghapus banner ini?')">Delete</button>
+                    </form>
+                    | <a href="#">Edit</a>
                 </td>
             </tr>
         <?php endforeach ?>

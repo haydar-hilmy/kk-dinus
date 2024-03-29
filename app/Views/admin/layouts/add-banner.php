@@ -8,12 +8,12 @@
         <?= csrf_field(); ?>
         <div class="form-group mt-3">
             <label for="judul">Judul Banner</label>
-            <input type="text" name="judul" class="form-control" id="judul" placeholder="Masukkan Judul">
+            <input type="text" value="<?= old('judul') ?>" name="judul" class="form-control" id="judul" placeholder="Masukkan Judul" required>
         </div>
 
         <div class="form-group mt-3">
             <label for="deskripsi">Deskripsi Banner</label>
-            <textarea class="form-control" name="deskripsi" id="deskripsi" rows="3" placeholder="Masukkan Deskripsi"></textarea>
+            <textarea class="form-control" name="deskripsi" id="deskripsi" rows="3" placeholder="Masukkan Deskripsi"><?= old('deskripsi') ?></textarea>
         </div>
 
         <div class="container w-50 mt-3">
@@ -22,14 +22,16 @@
 
         <div class="mt-3">
             <label class="form-label" id="label_foto" for="img_input">File Banner</label>
-            <input onchange="preview()" type="file" name="file" class="form-control" id="img_input">
+            <input onchange="preview()" type="file" name="file" class="form-control <?= session('file') ? 'is-invalid' : "" ?>" id="img_input" required>
+            <?php $validation = session('file'); ?>
+            <?php if ($validation) : ?>
+                <?php foreach ($validation as $error) : ?>
+                    <?= esc($error); ?>
+                <?php endforeach ?>
+            <?php endif ?>
         </div>
 
-        <?php if (session('validation')) : ?>
-            <?php foreach (session('validation')->getErrors() as $error) : ?>
-                <?= esc($error); ?>
-            <?php endforeach ?>
-        <?php endif ?>
+
 
         <div class="form-group mt-3">
             <button class="btn btn-primary" type="submit">Submit form</button>

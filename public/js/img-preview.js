@@ -5,7 +5,7 @@ function preview() {
     const labelFoto = document.querySelector("#label_foto");
 
     preview.style.display = 'block';
-    labelFoto.textContent = inputFoto.files[0].name;
+    // labelFoto.textContent = inputFoto.files[0].name;
 
     const fileFoto = new FileReader();
     fileFoto.readAsDataURL(inputFoto.files[0]);
