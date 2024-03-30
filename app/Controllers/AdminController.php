@@ -36,9 +36,9 @@ class AdminController extends BaseController
 
         if (!$this->validate([
             'file' => [
-                'rules' => 'max_size[file,1024]|is_image[file]|mime_in[file,image/jpg,image/png,image/jpeg]',
+                'rules' => 'max_size[file,4096]|is_image[file]|mime_in[file,image/jpg,image/png,image/jpeg]',
                 'errors' => [
-                    'max_size' => 'Ukuran Foto Max 1MB',
+                    'max_size' => 'Ukuran Foto Max 4MB',
                     'mime_in' => 'Hanya File JPG/PNG Yang Diizinkan.',
                     'is_image' => 'File harus berupa gambar'
                 ]
