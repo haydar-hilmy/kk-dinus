@@ -8,7 +8,13 @@
         <?= csrf_field(); ?>
         <div class="form-group mt-3">
             <label for="judul">Judul Banner</label>
-            <input type="text" value="<?= old('judul') ?>" name="judul" class="form-control" id="judul" placeholder="Masukkan Judul" required>
+            <input type="text" value="<?= old('judul') ?>" name="judul" class="form-control <?= session('judul') ? 'is-invalid' : "" ?>" id="judul" placeholder="Masukkan Judul" required>
+            <?php $validation = session('judul'); ?>
+            <?php if ($validation) : ?>
+                <?php foreach ($validation as $error) : ?>
+                    <?= esc($error); ?>
+                <?php endforeach ?>
+            <?php endif ?>
         </div>
 
         <div class="form-group mt-3">

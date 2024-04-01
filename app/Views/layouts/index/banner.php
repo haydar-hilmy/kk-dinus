@@ -1,16 +1,14 @@
 <main class="carousel-container">
     <div class="carousel">
-        <?php $i = 0; foreach($banners as $key => $banner): $i++; ?>
-        <div class="item <?php $i == 1? "active": "" ?>">
-            <img class="img-banner" src="<?= base_url('asset/banner/') . $banner->image ?>" alt="<?= $banner->title ?>" title="<?= $banner->title ?>">
-            <a class="caption">
-                <?= $banner->description ?>
-            </a>
-        </div>
+        <?php $i = 0;
+        foreach ($banners as $key => $banner) : $i++; ?>
+            <div class="item <?php $i == 1 ? "active" : "" ?>">
+                <img class="img-banner" src="<?= base_url('asset/banner/') . $banner->image ?>" alt="<?= $banner->title ?>" title="<?= $banner->title ?>">
+                <a class="caption">
+                    <?= $banner->description ?>
+                </a>
+            </div>
         <?php endforeach ?>
-        <div class="banner-loading-wrapper">
-            <img class="banner-loading" src="<?= base_url('asset/loading.gif') ?>" alt="loading-gif">
-        </div>
     </div>
     <button class="btn prev">
         <svg height="35px" version="1.1" viewBox="0 0 512 512" width="35px" xmlns="http://www.w3.org/2000/svg">

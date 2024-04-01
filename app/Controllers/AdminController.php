@@ -33,20 +33,23 @@ class AdminController extends BaseController
 
     public function postBanner()
     {
-
+        session()->remove('file');
+        session()->remove('judul');
         if (!$this->validate([
             'file' => [
-                'rules' => 'max_size[file,4096]|is_image[file]|mime_in[file,image/jpg,image/png,image/jpeg]',
+                'rules' => 'max_size[file,4096]|is_image[file]|mime_in[file,image/jpg,image/png,image/jpeg]|required',
                 'errors' => [
                     'max_size' => 'Ukuran Foto Max 4MB',
                     'mime_in' => 'Hanya File JPG/PNG Yang Diizinkan.',
-                    'is_image' => 'File harus berupa gambar'
+                    'is_image' => 'File harus berupa gambar',
+                    'required' => 'File tidak boleh kosong'
                 ]
             ]
         ])) {
             $validation = \Config\Services::validation();
             return redirect()->to("superadmin/banner/add")->withInput()->with('file', $validation->getErrors());
         }
+
 
         $get_File = $this->request->getFile('file');
 
