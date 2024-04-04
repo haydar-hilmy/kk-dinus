@@ -7,7 +7,7 @@
     <form action="update/<?= $banner["id"] ?>" method="post" enctype="multipart/form-data">
         <?= csrf_field(); ?>
         <input type="hidden" name="id" value="<?= $banner['id'] ?>">
-        <input type="text" name="oldFile" value="<?= $banner["image"] ?>">
+        <input type="hidden" name="oldFile" value="<?= $banner["image"] ?>">
         <div class="form-group mt-3">
             <label for="judul">Judul Banner</label>
             <input type="text" value="<?= old('judul') ? old('judul') : $banner["title"] ?>" name="judul" class="form-control" id="judul" placeholder="Masukkan Judul" required>
