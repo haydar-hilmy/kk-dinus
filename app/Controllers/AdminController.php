@@ -112,6 +112,7 @@ class AdminController extends BaseController
         }
 
         $data = [
+            "id" => $this->request->getVar('id'),
             "id_kk" => $this->kkModel->getIdBySess()->id,
             "title" => $this->request->getVar("judul"),
             "image" => $fileName,

@@ -6,6 +6,7 @@
     <h2>Edit Banner</h2>
     <form action="update/<?= $banner["id"] ?>" method="post" enctype="multipart/form-data">
         <?= csrf_field(); ?>
+        <input type="hidden" name="id" value="<?= $banner['id'] ?>">
         <input type="text" name="oldFile" value="<?= $banner["image"] ?>">
         <div class="form-group mt-3">
             <label for="judul">Judul Banner</label>

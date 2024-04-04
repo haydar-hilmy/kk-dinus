@@ -23,5 +23,3 @@ $routes->group('superadmin', function ($routes) {
     $routes->delete('banner/del/(:num)', 'AdminController::deleteBanner/$1');
     $routes->post('banner/edit/update/(:num)', 'AdminController::updateBanner/$1');
 });
-
-// COBA HILANGKAN UNIK KEY PADA KOLOM IMAGE
