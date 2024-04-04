@@ -1,5 +1,6 @@
 <?php
 
+use App\Controllers\AdminController;
 use CodeIgniter\Router\RouteCollection;
 
 /**
@@ -13,9 +14,14 @@ $routes->get('/logout', 'LoginController::logout');
 
 
 // SUPERADMIN
-$routes->get('/superadmin', 'KKController');
-$routes->get('/superadmin/banner', 'KKController::banner');
+$routes->group('superadmin', function ($routes) {
+    $routes->get('/', 'KKController');
+    $routes->get('banner', 'KKController::banner');
+    $routes->get('banner/add', 'AdminController::addBanner');
+    $routes->post('banner/add', 'AdminController::postBanner');
+    $routes->put('banner/edit/(:num)', 'AdminController::editBanner/$1');
+    $routes->delete('banner/del/(:num)', 'AdminController::deleteBanner/$1');
+    $routes->post('banner/edit/update/(:num)', 'AdminController::updateBanner/$1');
+});
 
-$routes->get('/superadmin/banner/add', 'AdminController::addBanner');
-$routes->post('/superadmin/banner/add', 'AdminController::postBanner');
-$routes->delete('/superadmin/banner/del/(:num)', 'AdminController::deleteBanner/$1');
+// COBA HILANGKAN UNIK KEY PADA KOLOM IMAGE

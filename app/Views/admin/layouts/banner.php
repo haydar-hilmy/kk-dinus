@@ -32,13 +32,17 @@
                     <td><?= $b->title ?></td>
                     <td><?= $b->description ?></td>
                     <td><?= $b->updated_at ?></td>
-                    <td>
+                    <td class="d-flex gap-2">
+                        <form action="<?= base_url('superadmin/banner/edit/') . $b->id ?>" method="post">
+                            <?= csrf_field(); ?>
+                            <input type="hidden" name="_method" value="PUT">
+                            <button class="btn btn-warning btn-sm" type="submit">Edit</button>
+                        </form>
                         <form action="<?= base_url('superadmin/banner/del/') . $b->id ?>" method="post">
                             <?= csrf_field(); ?>
                             <input type="hidden" name="_method" value="DELETE">
-                            <button type="submit" onclick="return confirm('Yakin menghapus banner ini?')">Delete</button>
-                        </form>
-                        | <a href="#">Edit</a>
+                            <button class="btn btn-danger btn-sm" type="submit" onclick="return confirm('Yakin menghapus banner ini?')">Delete</button>
+                        </form> 
                     </td>
                 </tr>
         <?php }

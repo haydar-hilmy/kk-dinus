@@ -4,9 +4,11 @@
         foreach ($banners as $key => $banner) : $i++; ?>
             <div class="item <?php $i == 1 ? "active" : "" ?>">
                 <img class="img-banner" src="<?= base_url('asset/banner/') . $banner->image ?>" alt="<?= $banner->title ?>" title="<?= $banner->title ?>">
-                <a class="caption">
-                    <?= $banner->description ?>
-                </a>
+                <?php if ($banner->description != null || $banner->description != "") { ?>
+                    <a class="caption">
+                        <?= $banner->description ?>
+                    </a>
+                <?php } ?>
             </div>
         <?php endforeach ?>
     </div>

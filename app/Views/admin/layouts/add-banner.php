@@ -8,13 +8,7 @@
         <?= csrf_field(); ?>
         <div class="form-group mt-3">
             <label for="judul">Judul Banner</label>
-            <input type="text" value="<?= old('judul') ?>" name="judul" class="form-control <?= session('judul') ? 'is-invalid' : "" ?>" id="judul" placeholder="Masukkan Judul" required>
-            <?php $validation = session('judul'); ?>
-            <?php if ($validation) : ?>
-                <?php foreach ($validation as $error) : ?>
-                    <?= esc($error); ?>
-                <?php endforeach ?>
-            <?php endif ?>
+            <input type="text" value="<?= old('judul') ?>" name="judul" class="form-control" id="judul" placeholder="Masukkan Judul" required>
         </div>
 
         <div class="form-group mt-3">
@@ -28,7 +22,7 @@
 
         <div class="mt-3">
             <label class="form-label" id="label_foto" for="img_input">File Banner</label>
-            <input onchange="preview()" type="file" name="file" class="form-control <?= session('file') ? 'is-invalid' : "" ?>" id="img_input" required>
+            <input onchange="preview()" accept="image/png, image/jpeg, image/jpg" type="file" name="file" class="form-control <?= session('file') ? 'is-invalid' : "" ?>" id="img_input" required>
             <?php $validation = session('file'); ?>
             <?php if ($validation) : ?>
                 <?php foreach ($validation as $error) : ?>
