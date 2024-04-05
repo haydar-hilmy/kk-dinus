@@ -83,7 +83,7 @@ class AdminController extends BaseController
             "banner" => $this->bannerModel->getBanner($id)
         ];
 
-        return view('admin/layouts/edit-admin', $data);
+        return view('admin/layouts/edit-banner', $data);
     }
 
     public function updateBanner($id){
@@ -115,6 +115,7 @@ class AdminController extends BaseController
             "id" => $this->request->getVar('id'),
             "id_kk" => $this->kkModel->getIdBySess()->id,
             "title" => $this->request->getVar("judul"),
+            "visibility" => $this->request->getVar("visibility"),
             "image" => $fileName,
             "description" => $this->request->getVar("deskripsi")
         ];

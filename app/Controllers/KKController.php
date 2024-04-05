@@ -30,7 +30,8 @@ class KKController extends BaseController
         $data = [
             "title" => "Banner",
             "kelompokKajian" => $this->kkmodel->getKK(),
-            "banners" => $this->bannermodel->getBanner()
+            "banners" => $this->bannermodel->getBanner(),
+            "bannersAll" => $this->bannermodel->getBanner(false, true),
         ];
 
         return view('admin/layouts/banner', $data);

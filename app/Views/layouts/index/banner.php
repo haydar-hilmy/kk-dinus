@@ -1,3 +1,4 @@
+<?php if($banners != null){ ?>
 <main class="carousel-container">
     <div class="carousel">
         <?php $i = 0;
@@ -27,3 +28,4 @@
     </button>
     <div class="dots"></div>
 </main>
+<?php } ?>

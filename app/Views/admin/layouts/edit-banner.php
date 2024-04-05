@@ -33,6 +33,11 @@
             <?php endif ?>
         </div>
 
+        <div class="form-check form-switch mt-3">
+            <input value="<?= $banner["visibility"] == 1? 0 : 1 ?>" class="form-check-input" name="visibility" type="checkbox" role="switch" id="flexSwitchCheckChecked" <?= $banner["visibility"] == 1 ? "checked" : "" ?>>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Visibility</label>
+        </div>
+
         <div class="form-group mt-3">
             <button class="btn btn-primary" type="submit">Submit form</button>
         </div>

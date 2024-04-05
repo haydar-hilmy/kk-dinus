@@ -16,21 +16,23 @@
             <th>Nama KK</th>
             <th>Title</th>
             <th>Description</th>
+            <th>Visibility</th>
             <th>Updated at</th>
             <th>Action</th>
         </tr>
 
-        <?php if (!$banners) {  ?>
+        <?php if (!$bannersAll) {  ?>
             <tr>
                 <td class="text-center" colspan="6">Belum ada data</td>
             </tr>
             <?php } else {
-            foreach ($banners as $key => $b) { ?>
+            foreach ($bannersAll as $key => $b) { ?>
                 <tr>
                     <td><?= $b->id ?></td>
                     <td><?= $b->shortName ?></td>
                     <td><?= $b->title ?></td>
                     <td><?= $b->description ?></td>
+                    <td><?= $b->visibility == 1? "show" : "hide" ?></td>
                     <td><?= $b->updated_at ?></td>
                     <td class="d-flex gap-2">
                         <form action="<?= base_url('superadmin/banner/edit/') . $b->id ?>" method="post">
