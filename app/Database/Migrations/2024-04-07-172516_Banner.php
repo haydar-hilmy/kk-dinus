@@ -26,25 +26,30 @@ class Banner extends Migration
                 'constraint' => 50,
                 'null' => false
             ],
+            'image' => [
+                'type' => 'VARCHAR',
+                'constraint' => 100,
+            ],
             'description' => [
                 'type' => 'TEXT',
                 'null' => true
             ],
             'visibility' => [
                 'type' => 'ENUM',
-                'constraint' => ['1', '1']
+                'constraint' => ['1', '0'],
+                'default' => '1'
             ],
             'created_at' => [
                 'type' => 'DATETIME'
             ],
             'updated_at' => [
                 'type' => 'TIMESTAMP',
-                'default' => 'CURRENT_TIMESTAMP',
-                'on update' => 'CURRENT_TIMESTAMP'
-            ],
+                'null' => false,
+            ]            
         ]);
 
         $this->forge->addKey('id', true);
+        $this->forge->addForeignKey('id_kk', 'kk', 'id');
         $this->forge->createTable('banner');
     }
 

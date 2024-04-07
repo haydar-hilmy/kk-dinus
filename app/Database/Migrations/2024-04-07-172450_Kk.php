@@ -13,7 +13,8 @@ class Kk extends Migration
                 'type'           => 'INT',
                 'constraint'     => 11,
                 'unsigned'       => true,
-                'auto_increment' => true
+                'auto_increment' => true,
+                'null' => false
             ],
             'shortName' => [
                 'type'       => 'VARCHAR',
@@ -22,7 +23,7 @@ class Kk extends Migration
             ],
             'fullName' => [
                 'type'       => 'VARCHAR',
-                'constraint' => '50',
+                'constraint' => '70',
                 'null' => true
             ],
             'nip' => [
@@ -46,6 +47,7 @@ class Kk extends Migration
             ]
         ]);
         $this->forge->addKey('id', true);
+        $this->forge->addUniqueKey('nip');
         $this->forge->createTable('kk');
     }
 
