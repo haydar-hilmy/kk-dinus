@@ -3,6 +3,7 @@
 namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
+use PHPUnit\Framework\Constraint\Constraint;
 
 class Banner extends Migration
 {
@@ -17,30 +18,30 @@ class Banner extends Migration
             ],
             'id_kk' => [
                 'type'           => 'INT',
-                'constraint'     => 11
+                'constraint'     => 11,
+                'unsigned'       => true
             ],
             'title' => [
                 'type' => 'VARCHAR',
-                'constraint' => '50',
+                'constraint' => 50,
                 'null' => false
             ],
             'description' => [
                 'type' => 'TEXT',
                 'null' => true
             ],
-            'added_by' => [
-                'type' => 'VARCHAR',
-                'constraint' => '50',
-                'null' => false
+            'visibility' => [
+                'type' => 'ENUM',
+                'constraint' => ['1', '1']
             ],
             'created_at' => [
-                'type' => 'DATETIME',
-                'null' => false
+                'type' => 'DATETIME'
             ],
             'updated_at' => [
-                'type' => 'DATETIME',
-                'null' => false
-            ]
+                'type' => 'TIMESTAMP',
+                'default' => 'CURRENT_TIMESTAMP',
+                'on update' => 'CURRENT_TIMESTAMP'
+            ],
         ]);
 
         $this->forge->addKey('id', true);
