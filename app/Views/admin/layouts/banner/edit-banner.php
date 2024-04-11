@@ -32,10 +32,10 @@
                 <?php endforeach ?>
             <?php endif ?>
         </div>
-
+        
         <div class="form-check form-switch mt-3">
-            <input value="<?= $banner["visibility"] == 1? 0 : 1 ?>" class="form-check-input" name="visibility" type="checkbox" role="switch" id="flexSwitchCheckChecked" <?= $banner["visibility"] == 1 ? "checked" : "" ?>>
-            <label class="form-check-label" for="flexSwitchCheckChecked">Visibility</label>
+            <input value="<?= $banner["visibility"] == 1? 1 : 0 ?>" class="form-check-input toggleInput" name="visibility" type="checkbox" role="switch" id="visibilityInput" <?= $banner["visibility"] == 1 ? "checked" : "" ?>>
+            <label class="form-check-label" for="visibilityInput">Visibility</label>
         </div>
 
         <div class="form-group mt-3">
@@ -49,5 +49,6 @@
 </div>
 
 <script src="<?= base_url('js/img-preview.js') ?>"></script>
+<script src="<?= base_url('js/toggleInput.js') ?>"></script>
 
 <?= $this->endSection() ?>

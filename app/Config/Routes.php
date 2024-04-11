@@ -15,11 +15,14 @@ $routes->get('/logout', 'LoginController::logout');
 
 // SUPERADMIN
 $routes->group('superadmin', function ($routes) {
-    $routes->get('/', 'KKController');
-    $routes->get('banner', 'KKController::banner');
-    $routes->get('banner/add', 'AdminController::addBanner');
-    $routes->post('banner/add', 'AdminController::postBanner');
-    $routes->put('banner/edit/(:num)', 'AdminController::editBanner/$1');
-    $routes->delete('banner/del/(:num)', 'AdminController::deleteBanner/$1');
-    $routes->post('banner/edit/update/(:num)', 'AdminController::updateBanner/$1');
+    $routes->get('/', 'AdminController');
+    
+    $routes->get('banner', 'BannerController');
+    $routes->get('banner/add', 'BannerController::addBanner');
+    $routes->post('banner/add', 'BannerController::postBanner');
+    $routes->put('banner/edit/(:num)', 'BannerController::editBanner/$1');
+    $routes->delete('banner/del/(:num)', 'BannerController::deleteBanner/$1');
+    $routes->post('banner/edit/update/(:num)', 'BannerController::updateBanner/$1');
+
+    $routes->get('kk', 'KKController');
 });

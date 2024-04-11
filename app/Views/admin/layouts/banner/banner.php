@@ -23,7 +23,7 @@
 
         <?php if (!$bannersAll) {  ?>
             <tr>
-                <td class="text-center" colspan="6">Belum ada data</td>
+                <td class="text-center" colspan="7">Belum ada data</td>
             </tr>
             <?php } else {
             foreach ($bannersAll as $key => $b) { ?>

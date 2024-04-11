@@ -9,32 +9,21 @@ use App\Models\BannerModel;
 
 class KKController extends BaseController
 {
-    protected $kkmodel;
-    protected $bannermodel;
+    protected $kkModel;
+    protected $bannerModel;
     public function __construct(){
-        $this->kkmodel = new KKModel();
-        $this->bannermodel = new BannerModel();
+        $this->kkModel = new KKModel();
+        $this->bannerModel = new BannerModel();
     }
 
-    public function index()
-    {
+    public function index(){
         $data = [
-            "title" => "Super Admin",
-            "kelompokKajian" => $this->kkmodel->getKK()
+            "title" => "Edit Banner",
+            "kelompokKajian" => $this->kkModel->getKK(),
+            "banners" => $this->bannerModel->getBanner()
         ];
 
-        return view('admin/index-admin', $data);
-    }
-
-    public function banner(){
-        $data = [
-            "title" => "Banner",
-            "kelompokKajian" => $this->kkmodel->getKK(),
-            "banners" => $this->bannermodel->getBanner(),
-            "bannersAll" => $this->bannermodel->getBanner(false, true),
-        ];
-
-        return view('admin/layouts/banner', $data);
+        return view('admin/layouts/kk/kk', $data);
     }
 
 }

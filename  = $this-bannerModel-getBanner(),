@@ -1,0 +1,203 @@
+[33mcommit b89b5b36bd8b147db651199c8b34dbcc1b5860b2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Mon Apr 8 00:26:09 2024 +0700
+
+    fix: database migrate
+
+[33mcommit 6f2424bf027a1843c8f19c4bf6654a45f4ed7e64[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Sun Apr 7 23:55:54 2024 +0700
+
+    fix: minor bug
+
+[33mcommit c87c7d0fa90384d8b62b07ccab4365ee3dbcac55[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Fri Apr 5 10:30:53 2024 +0700
+
+    fix: banner
+
+[33mcommit c9d004cbd23b383f22ecdf95b1aefc5720daa030[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Fri Apr 5 00:08:04 2024 +0700
+
+    fix: banner form
+
+[33mcommit 0e2204423b120ae9d851971b8ed146628a0334c6[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Thu Apr 4 23:56:03 2024 +0700
+
+    fix: minor bug
+
+[33mcommit 0c1cc5b2638bbda670e4c41cdc44ebbfc63ccea6[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Thu Apr 4 15:23:39 2024 +0700
+
+    fix: minor bug
+
+[33mcommit 41540fee1cd3cd05d7a5a85645bf622102f49953[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Mon Apr 1 17:37:59 2024 +0700
+
+    fix: minor bug in banner
+
+[33mcommit 9487efe1f93e7fea3cdff326dea10b9a8392d6a7[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Sat Mar 30 22:58:02 2024 +0700
+
+    fix: minor bug
+
+[33mcommit 0ad80e3bcac3cb434f568ef753830507f7c765a8[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Fri Mar 29 23:44:35 2024 +0700
+
+    fix: form add banner
+
+[33mcommit 4c1d2b201ef8495650903833e7cce2af04497ebd[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Thu Mar 28 07:58:14 2024 +0700
+
+    feat: form banner
+
+[33mcommit 58cc3e867ea82cbfb260868da0d952224ea35f11[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Wed Mar 27 23:31:29 2024 +0700
+
+    feat: add bootstrap file
+
+[33mcommit 12b31c84461408a24b869a8a8f309fe8521a83d6[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Tue Mar 26 10:50:32 2024 +0700
+
+    fix: superadmin view
+
+[33mcommit bcb9bab16d1c4d0e8851baef704a6699fb141032[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Mon Mar 25 23:23:37 2024 +0700
+
+    fix: superadmin view
+
+[33mcommit 2b7d0b2276e0619bff1e28ac21dc4a9f6541cafd[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Mon Mar 25 16:06:08 2024 +0700
+
+    fix: superadmin view
+
+[33mcommit 8783c974848184e329da80ee0c9028e9fd154b1b[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Sun Mar 24 23:07:06 2024 +0700
+
+    feat: superadmin view
+
+[33mcommit 8bce8ad23c1383840485085a2241d5900b6db448[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Sun Mar 24 00:26:46 2024 +0700
+
+    feat: superadmin view
+
+[33mcommit 14e5a3af46a6dcbe4eacfc89ecc442c038f5491f[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Sat Mar 23 18:39:08 2024 +0700
+
+    feat: admin layouts
+
+[33mcommit 7b156807635aa8351d48978cf9c75a913ae554f9[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Sat Mar 23 17:56:16 2024 +0700
+
+    feat: admin middleWare
+
+[33mcommit d1d596e2f65e9ec069f4af3ee39195e29cdde286[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Fri Mar 22 23:11:21 2024 +0700
+
+    fix: encapsulation admin
+
+[33mcommit 48174c868621ef0cc0ce9adb4ddc127b8c176deb[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Thu Mar 21 22:42:48 2024 +0700
+
+    make: KK Controller
+
+[33mcommit da31138369ec033fe0a0bd10d9a4aef64d1431f6[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Wed Mar 20 13:28:28 2024 +0700
+
+    fix: logic login
+
+[33mcommit 850c2632bbf06bc8199ac5b302f1050ab455a9e4[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Tue Mar 19 11:01:57 2024 +0700
+
+    fix: login logic
+
+[33mcommit 035fb2543fb7bf21a9ac79d85d065f5334ff8aab[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Tue Mar 19 10:54:43 2024 +0700
+
+    fix: superadmin logic
+
+[33mcommit 0b98a7426f0da8d568d53c9ce12748202d88b397[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Mon Mar 18 23:47:09 2024 +0700
+
+    fix: logika login
+
+[33mcommit 54a6c6fa7e78657d31bc1f4e5292d78089320f09[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Mon Mar 18 23:37:16 2024 +0700
+
+    fix: login page
+
+[33mcommit 078e3024fb5e972abf7e2665f6daf7eab2455222[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Sun Mar 17 00:39:03 2024 +0700
+
+    feat: login form, layouting view
+
+[33mcommit e0cf3e52af48451d4b18ce95c5f37f455ed1bb15[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Sat Mar 16 23:44:31 2024 +0700
+
+    feat: database, loginController
+
+[33mcommit 6d86da8b9eb453979cae616dedef075dae087a4d[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Tue Mar 5 20:53:50 2024 +0700
+
+    fix: content css, footer css
+
+[33mcommit 63348c95090e11cc6c99a1d9ac0449a4cc23a25b[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Tue Mar 5 20:17:45 2024 +0700
+
+    fix: content css, footer css
+
+[33mcommit 09d945cef924962ab1564e258ae237a73846ad2b[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Tue Mar 5 17:49:24 2024 +0700
+
+    fix: banner
+
+[33mcommit 2a2d3fec222d1c7663431f269d6c9eccb13a46af[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Tue Mar 5 16:55:21 2024 +0700
+
+    fix: navbar css, vendor
+
+[33mcommit f12d978f86dd288c5d4c5162c6908463c233f522[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Mon Mar 4 15:15:00 2024 +0700
+
+    fix: header text at index
+
+[33mcommit a78caea250fcafececad31037ad8bb29e53c01de[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Sun Mar 3 23:34:35 2024 +0700
+
+    feat: main header
+
+[33mcommit 0b7604744f161f76236bd5f46455b8fb041ef488[m
+Author: Haydar Hilmy <88047909+haydar-hilmy@users.noreply.github.com>
+Date:   Sun Mar 3 20:43:33 2024 +0700
+
+    first commit

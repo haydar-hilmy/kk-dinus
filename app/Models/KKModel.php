@@ -60,7 +60,7 @@ class KKModel extends Model
         if ($query->role == "superadmin") {
             session()->set('superadmin', $username);
         } else {
-            session()->set('ketua_kk', $username);
+            session()->set('kk', $username);
         }
 
         return $query;

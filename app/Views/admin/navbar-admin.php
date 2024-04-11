@@ -15,7 +15,7 @@
                         KK Dinus
                     </button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Manage KK</a>
+                        <a class="dropdown-item" href="<?= base_url('superadmin/kk') ?>"><b>Manage KK</b></a>
                         <?php foreach ($kelompokKajian as $key => $kk) : ?>
                             <a class="dropdown-item" href="#"><?= $kk->fullName ?></a>
                         <?php endforeach ?>
